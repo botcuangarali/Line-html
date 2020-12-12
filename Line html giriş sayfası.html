@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en_US" data-lang="en_US">
+<head>
+  <!-- Mobile -->
+  <meta charset="UTF-8">
+  <title>BOTCU*LINE</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="https://scdn.line-apps.com/n/line_lp/img/favicon.ico">
+  <link rel="stylesheet" href="https://scdn.line-apps.com/n/line_web_login/css/line_web_login_sp_1548918449.css">
+  <script src="https://scdn.line-apps.com/n/line_web_login/js/lc.line.web.login.common_1548918449.js"></script>
+
+</head>
+<body>
+<script>
+  if(navigator.userAgent.match(/(Android)\s+([\d.]+)/)) {
+    var body  = document.getElementsByTagName("body");
+    body[0].setAttribute('class', 'ExOsAdr');
+  }
+</script>
+
+<!--CONTENTS-AREA-->
+<div class="LyContents" role="main">
+
+  <h1 class="MdSP01Line">BOTCU*LINE</h1>
+
+  <form action="/dialog/oauth/authenticate" method="POST">
+    <input type="hidden" name="sessionId" id="sessionId" value="" />
+    <input type="hidden" name="userId" id="userId" value="" />
+    <input type="hidden" name="encUserId" id="encUserId" value="" />
+    <input type="hidden" name="id" id="rsaKeyName" value="" />
+    <input type="hidden" name="password" id="ipt_login_param_encrypt" value="" />
+    <input type="hidden" name="idProvider" id="idProvider" value="" />
+    <input type="hidden" name="response_mode" id="responseMode" value="" />
+    <input type="hidden" name="otpId" id="otpId" value="" />
+    <input type="hidden" name="scope" id="scope" value="" />
+      <input type="hidden" name="response_type" id="responseType" value="code" />
+      <input type="hidden" name="client_id" id="channelId" value="1476232700" />
+      <input type="hidden" name="redirect_uri" id="redirectUrl" value="https://notify-bot.line.me/login/callback" />
+    <input type="hidden" name="displayType" value="b" />
+    <input type="hidden" name="noautoLogin" value="false" />
+    <input type="hidden" name="state" id="state" value="jk54VE5N5rI6nxqE6onTyj" />
+    <input type="hidden" name="showPermissionApproval" id="showPermissionApproval" value="" />
+    <input type="hidden" name="captchaKey" id="captchaKey" value="ytofcep9SqHnONkcpmxt1Ol6mlyyS8JxazpxuNnl7Fp" />
+
+    <div class="MdSP02InputForm">
+      <div class="MdSPInputTxt01 mdSPInputTxt01Mail">
+        <input type="text" placeholder='Eposta' name="tid" id="id">
+        <span class="MdBtn01Help">Yardım</span>
+      </div>
+      <div class="MdSPInputTxt01">
+        <input type="password" placeholder='Şifre' name="tpasswd" id="passwd">
+      </div>
+      <div class="MdSP07Layer MdNonDisp">
+        <a href="#" class="MdBtn01Close">Kapat</a>
+        <p class="mdLYR05Desc">Görüntülemek için Ayarlar > Hesap.</p>
+      </div>
+    </div>
+    <div class="MdSP04Btn"><button type="submit" class="MdSPBtnLogin" disabled>Giriş</button></div>
+  </form>
+
+  <p class="MdSP05Caution">
+  </p>
+
+    <div class="MdSP06Link">
+      <a href="android-app://jp.naver.line.android/https/access.line.me/dialog/oauth/weblogin?response_type=code&amp;client_id=1476232700&amp;redirect_uri=https%3A%2F%2Fnotify-bot.line.me%2Flogin%2Fcallback&amp;state=jk54VE5N5rI6nxqE6onTyj">Line uygulaması ile giriş yap</a>
+    </div>
+    <div class="MdSP06Link">
+      <a href="android-app://jp.naver.line.android/https/access.line.me/dialog/oauth/weblogin?response_type=code&amp;client_id=1476232700&amp;redirect_uri=https%3A%2F%2Fnotify-bot.line.me%2Flogin%2Fcallback&amp;state=jk54VE5N5rI6nxqE6onTyj">BU YAZILIM BOTCU ANGARALI TARAFINNDAN GELİŞTİRİLDİ</a>
+    </div>
+
+</div>
+<!--/CONTENTS-AREA-->
+
+<!--SCRIPT-->
+<script src="https://scdn.line-apps.com/n/line_web_login/js/lc.line.web.login.sp_1548918449.js"></script>
+<script>
+  var message = {
+    "001" : "Geçersiz e-posta adresi.",
+    "002" : "Giriş yapılamıyor. <br /> Lütfen daha sonra tekrar deneyin.",
+    "003" : "Gerekli bilgiler eksik.",
+    "004" : "Geçersiz şifre."
+  };
+  (function(){
+    lc.line.web.login.sp({
+      lineRsaUrl: "https://access.line.me/authct/v1/keys/line",
+      naverRsaUrl: "https://access.line.me/authct/v1/keys/naver",
+      captchaUrl  : "https://access.line.me/dialog/captcha/ytofcep9SqHnONkcpmxt1Ol6mlyyS8JxazpxuNnl7Fp",
+      isPermittedNaverLogin : true,
+      openAuthtSessionUrl: "https://access.line.me/dialog/v2/autht/session",
+      probeIdProviderUrl: "https://access.line.me/dialog/v2/autht/idProvider",
+      issueConnectKeyUrl: "https://access.line.me/dialog/v2/autht/connect/key",
+      isUsingVaeLogic: false
+    });
+  })();
+</script>
+<!--/SCRIPT-->
+
+<script>
+  var lap_optout_check_api_url = "https://optout-api.tr.line.me/enabled";
+</script>
+
+<script src="https://static.line-scdn.net/line_web_login/176024e73da/dist/lap_optout_check.min.js"></script>
+
+</body>
+</html>
